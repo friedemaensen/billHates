@@ -1,24 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<TabPane prefHeight="750.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.Controller">
+<TabPane fx:id="mainPane"  minHeight="1000.0" minWidth="1000.0" prefHeight="1500.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.mainController">
    <tabs>
       <Tab fx:id="tabCustomerManagement" text="Kundenverwaltung">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          <AnchorPane minHeight="1500.0" minWidth="1500.0">
+               <children>
+                  <Button layoutY="50.0" mnemonicParsing="false" text="Button" />
+                  <TextField layoutY="14.0" />
+               </children></AnchorPane>
         </content>
       </Tab>
       <Tab fx:id="tabPriceManagement" text="Preisverwaltung">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          <AnchorPane minHeight="1500.0" minWidth="1500.0" />
         </content>
       </Tab>
       <Tab fx:id="tabBillMaker" text="Rechnungen erstellen">
         <content>
-          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+          <AnchorPane minHeight="1500.0" minWidth="1500.0" />
         </content>
       </Tab>
    </tabs>

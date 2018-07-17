@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<TabPane fx:id="MainFrame" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="800" prefWidth="1100" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="eu.silikonsenke.billhates.controllers.MainController">
+    <tabs>
+        <Tab fx:id="tabKundenverwaltung" text="Kundenverwaltung">
+            <content>
+                <SplitPane fx:id="divPaneKunden" dividerPositions="0.3" orientation="VERTICAL" prefHeight="${MainFrame.height}" prefWidth="${MainFrame.width}">
+                    <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100" prefWidth="100">
+                     <children>
+                        <Text layoutX="14.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fensterbreite" />
+                        <Text layoutX="14.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="divPaneBreite" />
+                        <Text fx:id="fensterBreite" layoutX="128.0" layoutY="54.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                        <Text fx:id="paneBreite" layoutX="128.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                        <Text layoutX="14.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="divPaneDiv" />
+                        <Text fx:id="paneDiv" layoutX="128.0" layoutY="102.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                     </children></AnchorPane>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                    </items>
+                </SplitPane>
+
+            </content>
+        </Tab>
+
+        <Tab text="Preisverwaltung">
+            <content>
+                <AnchorPane prefHeight="${MainFrame.height}" prefWidth="${MainFrame.width}" />
+            </content>
+        </Tab>
+        <Tab text="Angebot erstellen">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="${MainFrame.height}" prefWidth="${MainFrame.width}" />
+            </content>
+        </Tab>
+        <Tab text="Rechnung erstellen">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="${MainFrame.height}" prefWidth="${MainFrame.width}" />
+            </content>
+        </Tab>
+
+    </tabs>
+</TabPane>
